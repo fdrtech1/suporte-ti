@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suporte de TI para Engenharia e CAD | Fernando Daniel</title>
+<meta name="description" content="Instalação, configuração e manutenção de computadores para quem trabalha com CAD e projeto. Atendimento remoto e presencial em Capelinha-MG e região.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --fundo:#0e1217; --card:#161c24; --linha:#2a3340;
+    --texto:#e8edf2; --suave:#a9b4c0; --destaque:#f5b400; --ok:#25d366;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--fundo);color:var(--texto);font-family:Archivo,system-ui,sans-serif;line-height:1.55}
+  .wrap{max-width:980px;margin:0 auto;padding:0 16px}
+  .mono{font-family:"JetBrains Mono",monospace;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--destaque)}
+  header{padding:18px 0;border-bottom:1px solid var(--linha)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .marca{font-weight:800;font-size:1.05rem}
+  .marca span{color:var(--destaque)}
+  .hero{padding:56px 0 44px}
+  h1{font-size:clamp(2rem,6.5vw,3.4rem);line-height:1.08;font-weight:800;margin:14px 0 16px}
+  h1 em{font-style:normal;color:var(--destaque)}
+  .hero p{color:var(--suave);font-size:1.1rem;max-width:620px}
+  .btn{display:inline-block;background:var(--ok);color:#06210f;font-weight:800;text-decoration:none;padding:14px 22px;border-radius:10px;margin-top:22px}
+  .btn.sec{background:transparent;color:var(--texto);border:1px solid var(--linha);font-weight:600}
+  .btn.peq{padding:10px 16px;margin-top:0;font-size:.92rem}
+  section{padding:44px 0;border-top:1px solid var(--linha)}
+  h2{font-size:1.7rem;font-weight:800;margin:8px 0 22px}
+  .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--linha);border-radius:14px;padding:20px}
+  .card h3{font-size:1.1rem;margin-bottom:8px}
+  .card p,.card li{color:var(--suave);font-size:.96rem}
+  .card ul{padding-left:18px;margin-top:8px}
+  .preco{font-size:1.6rem;font-weight:800;color:var(--texto);margin:10px 0 2px}
+  .preco small{font-size:.85rem;color:var(--suave);font-weight:400}
+  .popular{border-color:var(--destaque)}
+  .callout{background:#1d1a0d;border:1px solid var(--destaque);border-radius:14px;padding:22px}
+  .callout h3{color:var(--destaque);margin-bottom:8px}
+  .callout p{color:var(--texto)}
+  .passos{counter-reset:p}
+  .passos .card::before{counter-increment:p;content:"0" counter(p);font-family:"JetBrains Mono",monospace;color:var(--destaque);display:block;margin-bottom:8px}
+  details{background:var(--card);border:1px solid var(--linha);border-radius:12px;padding:16px;margin-bottom:10px}
+  summary{font-weight:600;cursor:pointer}
+  details p{color:var(--suave);margin-top:10px}
+  footer{padding:30px 0 90px;border-top:1px solid var(--linha);color:var(--suave);font-size:.9rem}
+  .fixo{position:fixed;left:16px;right:16px;bottom:14px;text-align:center;margin:0;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+  @media(min-width:700px){.fixo{left:auto;right:24px;width:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="marca">Suporte de TI <span>· Engenharia e CAD</span></div>
+    <a class="btn peq" data-msg="Olá Fernando, quero um orçamento de suporte de TI." href="#">WhatsApp</a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="mono">Capelinha-MG · remoto e presencial</div>
+    <h1>Seu computador de projeto <em>rodando liso</em>, sem perder prazo.</h1>
+    <p>Suporte de TI feito por quem usa CAD todo dia. Instalo, configuro e mantenho a máquina de quem projeta: escritório de engenharia, metalúrgica, serralheria e projetista autônomo.</p>
+    <a class="btn" data-msg="Olá Fernando, quero o diagnóstico gratuito de 20 minutos do meu computador." href="#">Pedir diagnóstico gratuito de 20 min</a>
+  </div>
+
+  <section>
+    <div class="mono">O que eu faço</div>
+    <h2>Serviços</h2>
+    <div class="grade">
+      <div class="card">
+        <h3>Instalação e configuração de CAD</h3>
+        <p>SolidWorks, Onshape, FreeCAD, SheetCAM, CorelDRAW e outros programas de projeto. Templates, bibliotecas, driver de vídeo certo e ajuste de desempenho.</p>
+      </div>
+      <div class="card">
+        <h3>PC lento ou travando</h3>
+        <p>Diagnóstico do gargalo, limpeza, troca de HD por SSD e aumento de memória. Você volta a abrir montagem grande sem esperar.</p>
+      </div>
+      <div class="card">
+        <h3>Backup dos projetos</h3>
+        <p>Cópia automática dos arquivos de trabalho na nuvem ou em disco externo, conferida todo mês. Projeto perdido custa mais caro que qualquer suporte.</p>
+      </div>
+      <div class="card">
+        <h3>Manutenção mensal remota</h3>
+        <p>Atualizações, antivírus, espaço em disco e inicialização revisados todo mês, à noite, sem parar seu expediente.</p>
+      </div>
+      <div class="card">
+        <h3>Formatação e Windows</h3>
+        <p>Quando precisa, faço a instalação limpa do Windows com drivers e programas básicos, e devolvo a máquina pronta para trabalhar.</p>
+      </div>
+      <div class="card">
+        <h3>Impressora, rede e plotter</h3>
+        <p>Compartilhamento de pastas entre os computadores do escritório, impressora em rede e configuração de impressão em PDF e escala.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="callout">
+      <h3>Ainda usa HD? O SSD é o upgrade que mais aparece.</h3>
+      <p>Trocar o HD por SSD faz o Windows ligar em segundos e o programa de CAD abrir muito mais rápido. Instalo com seus arquivos e programas clonados, sem você reinstalar nada. Peça e mão de obra no mesmo orçamento.</p>
+      <a class="btn" data-msg="Olá Fernando, quero orçamento para trocar o HD por SSD." href="#">Orçar troca por SSD</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="mono">Preços</div>
+    <h2>Pacotes</h2>
+    <div class="grade">
+      <!-- PREÇOS: edite os valores direto nos blocos abaixo -->
+      <div class="card">
+        <h3>Atendimento avulso</h3>
+        <div class="preco">R$ 120 <small>por atendimento remoto</small></div>
+        <ul>
+          <li>Até 1 hora por acesso remoto</li>
+          <li>Instalação ou configuração de programa</li>
+          <li>Presencial sob orçamento</li>
+        </ul>
+        <a class="btn sec" data-msg="Olá Fernando, quero um atendimento avulso." href="#">Quero este</a>
+      </div>
+      <div class="card popular">
+        <div class="mono">Mais pedido</div>
+        <h3>Plano Básico</h3>
+        <div class="preco">R$ 250 <small>/mês · até 3 computadores</small></div>
+        <ul>
+          <li>Manutenção preventiva remota mensal</li>
+          <li>2 chamados remotos por mês</li>
+          <li>Backup conferido</li>
+        </ul>
+        <a class="btn" data-msg="Olá Fernando, quero o Plano Básico (até 3 computadores)." href="#">Quero este</a>
+      </div>
+      <div class="card">
+        <h3>Plano Escritório</h3>
+        <div class="preco">R$ 450 <small>/mês · até 6 computadores</small></div>
+        <ul>
+          <li>Preventiva remota mensal</li>
+          <li>Chamados remotos no horário de atendimento</li>
+          <li>1 visita presencial por mês</li>
+        </ul>
+        <a class="btn sec" data-msg="Olá Fernando, quero o Plano Escritório (até 6 computadores)." href="#">Quero este</a>
+      </div>
+    </div>
+    <p style="color:var(--suave);margin-top:14px;font-size:.92rem">Peças e formatação presencial são orçadas à parte. Pagamento: 50% na aprovação e 50% na entrega; planos com mensalidade antecipada.</p>
+  </section>
+
+  <section>
+    <div class="mono">Como funciona</div>
+    <h2>Três passos</h2>
+    <div class="grade passos">
+      <div class="card"><h3>Diagnóstico gratuito</h3><p>20 minutos por acesso remoto. Você recebe um relatório de uma página com o que foi encontrado.</p></div>
+      <div class="card"><h3>Orçamento por escrito</h3><p>Escopo e preço fechados pelo WhatsApp antes de qualquer serviço. Sem surpresa no final.</p></div>
+      <div class="card"><h3>Execução</h3><p>Atendimento de segunda a sexta, das 18h às 22h, e sábado, das 8h às 14h. Mensagens respondidas no horário de almoço.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="mono">Dúvidas</div>
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Você instala programa sem licença?</summary><p>Não. Trabalho só com software licenciado. Se a licença pesa no orçamento, mostro alternativas gratuitas e legais, como FreeCAD e Onshape, e ajudo na migração.</p></details>
+    <details><summary>Atende fora de Capelinha?</summary><p>Sim, por acesso remoto atendo qualquer cidade. Presencial em Capelinha e região, combinado antes.</p></details>
+    <details><summary>Meus arquivos de projeto ficam seguros?</summary><p>Sim. O acesso remoto só acontece com sua autorização, e os arquivos dos seus clientes são tratados com sigilo.</p></details>
+    <details><summary>Emite garantia das peças?</summary><p>Peças novas têm a garantia do fabricante, informada no orçamento. O serviço tem garantia de 30 dias.</p></details>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">Fernando Daniel · Manutenção em TI · Capelinha-MG</div>
+</footer>
+
+<a class="btn fixo" data-msg="Olá Fernando, vim pelo site e quero falar sobre suporte de TI." href="#">Falar no WhatsApp</a>
+
+<script>
+/* ============================================================
+   COMO EDITAR
+   1) Troque o número abaixo pelo seu WhatsApp Business:
+      55 + DDD + número, só dígitos. Ex.: "5533912345678"
+   2) Os preços e textos ficam direto no HTML acima.
+   3) Cada botão tem um data-msg: é a mensagem que já chega
+      escrita no seu WhatsApp. Edite à vontade.
+   ============================================================ */
+const WHATSAPP = "5511912130716";
+
+document.querySelectorAll("[data-msg]").forEach(function (botao) {
+  botao.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(botao.dataset.msg);
+  botao.target = "_blank";
+  botao.rel = "noopener";
+});
+</script>
+</body>
+</html>
